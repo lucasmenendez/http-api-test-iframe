@@ -1,7 +1,17 @@
-# http-api-test-iframe
-Simple component that can be embedded as an iframe to test the HTTP API.
+# HTTP API Test Iframe
+
+A lightweight and customizable component designed to quickly test and interact with HTTP APIs. Easily embed this iframe in your project to debug API endpoints and visualize responses without leaving your browser.
+
+## Features
+
+ - Easy Embedding: Insert the provided iframe code into your HTML.
+ - Customizable Settings: Configure base URLs, paths, HTTP methods, headers, and request bodies.
+ - Responsive Design: The iframe automatically adjusts its height based on content.
+ - Quick API Testing: Send requests and view responses instantly.
 
 ## Demo
+
+Try out the live demo below (or view it directly in the [live demo](https://lucasmenendez.github.io/http-api-test-iframe/demo.html)):
 
 ```html
 <iframe
@@ -20,6 +30,8 @@ Simple component that can be embedded as an iframe to test the HTTP API.
 
 ## Default configuration
 
+By default, the component uses the following configuration. You can override these settings by passing a custom configuration via the conf parameter in the iframe URL:
+
 ```javascript
 const defaultConfig = {
     baseUrl: "https://api.example.com",
@@ -32,3 +44,25 @@ const defaultConfig = {
     excludedMethods: [],
 }
 ```
+
+## How to Use
+
+1. **Embed the Iframe**: Copy the demo code into your HTML file where you want the component to appear.
+2. **Customize your request**: Adjust the conf parameter in the iframe’s src URL to change the API endpoint, HTTP method, headers, and body.
+3. **Test your API**: Use the embedded interface to send requests and view the responses in real time.
+
+
+## Contributing
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request.
+
+## License
+This project is licensed under the [AGPL-3.0 license](./LICENSE).
+
+## Contact
+For questions or feedback, please open an [issue on the GitHub repository](https://github.com/lucasmenendez/http-api-test-iframe/issues/new).
+
+
+
+
+
+
